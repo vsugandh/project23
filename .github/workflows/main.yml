@@ -1,19 +1,13 @@
-name : first Workflow
-on : 
+name: first Workflow
+on: 
   push :
-    branches : ["main"]
-  workflow_dispatch : 
+    branches: ["main"]
+  workflow_dispatch: 
   
-jobs : 
+jobs: 
   build:
-    runs-on : ubuntu-latest
-    steps :
-      - uses : actions/checkout@v3
-      - name : send mail
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: send mail
         run: echo welcome
-      
-      
-     
-      
-      
-      
