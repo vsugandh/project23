@@ -2,15 +2,14 @@ name : first Workflow
 on : 
   push :
     branches : ["main"]
-  workflow_Dispatch : 
+  workflow_dispatch : 
   
-Jobs : 
-    build :
-    runs-on : ubunutu-latest
-    steps : 
+jobs : 
+  runs-on : ubuntu-latest
+    steps :
       - uses : actions/checkout@v3
       - name : send mail
-      run : echo welcome to git hub actions
+      
       
      
       
