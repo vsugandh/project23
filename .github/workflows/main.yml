@@ -1,0 +1,19 @@
+name : first Workflow
+on : 
+  push :
+    branches : ["main"],
+  workflow_Dispatch : 
+  
+Jobs : 
+    build :
+    runs-on : ubunutu-latest
+    steps : 
+      - uses : actions/checkout@V3
+      - name : send mail
+      /*use send email framework */
+      run : echo welcome to git hub actions
+      
+     
+      
+      
+      
